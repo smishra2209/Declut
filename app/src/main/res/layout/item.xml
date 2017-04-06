@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_marginBottom="48dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:layout_marginTop="64dp"
+             android:layout_gravity="center">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/background">
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/imagebg2"
+                android:gravity="center_horizontal" android:layout_height="386dp">
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/imagebg1"
+                android:gravity="center_horizontal" android:layout_height="380dp">
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/imagebg"
+            android:gravity="center_horizontal">
+        <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp" app:srcCompat="@android:color/background_dark"
+                    android:id="@+id/cardImage"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"/>
+        </FrameLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal">
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/folderName" android:gravity="left"
+                    android:padding="4dp"
+                    android:textColor="#787878"
+                    android:textSize="20sp"
+                    tools:text=""
+            android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="150dp" android:layout_height="150dp"
+          android:alpha="0"
+          android:background="@drawable/like" android:id="@+id/item_swipe_left_indicator"/>
+    <View android:layout_width="150dp" android:layout_height="150dp"
+          android:alpha="0"
+          android:background="@drawable/nope" android:id="@+id/item_swipe_right_indicator"
+          android:layout_gravity="right"/>
+
+</FrameLayout>
